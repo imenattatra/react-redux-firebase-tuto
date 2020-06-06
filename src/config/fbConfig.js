@@ -16,6 +16,6 @@ measurementId: "G-X7BCQ9VR72"
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 // Database
-firebase.firestore().settings({timestampsInSnapshots: true})
+firebase.firestore().settings({})
 
 export default firebase;
