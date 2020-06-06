@@ -22,6 +22,7 @@ class Dashboard extends Component {
 }
 
 const mapStateToProp = (state)=>{
+    console.log(state);
     return{
         projects:state.project.projects
     }
