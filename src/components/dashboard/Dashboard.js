@@ -26,4 +26,4 @@ const mapStateToProp = (state)=>{
         projects:state.project.projects
     }
 }
-export default connect()(Dashboard);
+export default connect(mapStateToProp)(Dashboard);
