@@ -6,12 +6,14 @@ import {connect} from 'react-redux'
 
 const NavBar = (props) => {
     const { auth } = props;
+    const links=auth.uid ? <SignedInLinks />: <SignedOutLinks />
     return ( 
     <nav className="nav-wrapper grey darken-3">
         <div className="container">
             <Link to="/" className="brand-logo">MarioPlan</Link>
-            <SignedInLinks />
-            <SignedOutLinks />
+            {links}
+            {/* { auth.uid && <SignedInLinks />}
+            { !auth.uid &&  <SignedOutLinks />} */}
         </div>
     </nav> 
     );
