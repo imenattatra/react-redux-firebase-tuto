@@ -14,7 +14,7 @@ import fbConfig from './config/fbConfig'
 const store = createStore(rootReducer,
   compose(
     applyMiddleware(thunk.withExtraArgument({getFirebase, getFirestore})),
-    reactReduxFirebase(fbConfig, {attachAuthIsReady:true}), // redux binding for firebase + waiting for auth to be loaded
+    reactReduxFirebase(fbConfig, {useFirestoreForProfile:true,userProfile:'users',attachAuthIsReady:true}), // redux binding for firebase + waiting for auth to be loaded
     reduxFirestore(fbConfig) // redux bindings for firestore
   )
 );
