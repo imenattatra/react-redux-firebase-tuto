@@ -12,8 +12,6 @@ const NavBar = (props) => {
         <div className="container">
             <Link to="/" className="brand-logo">MarioPlan</Link>
             {links}
-            {/* { auth.uid && <SignedInLinks />}
-            { !auth.uid &&  <SignedOutLinks />} */}
         </div>
     </nav> 
     );

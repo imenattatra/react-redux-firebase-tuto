@@ -16,10 +16,8 @@ class CreateProject extends Component {
     handleSubmit=(e)=>{
         e.preventDefault();
         this.props.createProject(this.state)
-        this.setState({
-            email:'',
-            password:''
-        })
+        this.props.history.push('/');
+
     }
     render() { 
         const {auth}=this.props
