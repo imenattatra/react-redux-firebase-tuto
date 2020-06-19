@@ -1,4 +1,4 @@
-import React, { Profiler } from 'react';
+import React from 'react';
 import {NavLink} from 'react-router-dom' //NavLink to get the active page
 import {connect} from 'react-redux'
 import {signOut} from '../../store/actions/authActions'
